@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+
+    <script>
+
+while (true) {
+
+var options = ["rock", "paper", "scissors"];
+var computerChoice  = options[Math.floor(Math.random() * options.length)];
+var humanChoice = prompt("LET'S PLAY A GAME OF ROCK PAPER SCISSORS. Which do you choose?");
+
+
+//If it's a tie:
+if (humanChoice == computerChoice) {
+    alert("It's a tie, try again!")
+}
+
+
+//If the human chooses rock (0):
+
+else if (humanChoice == "rock" && computerChoice == "paper") {
+    alert("Paper SMOTHERS rock, you lose!");
+}
+
+else if (humanChoice == "rock" && computerChoice == "scissors") {
+    alert("Rock CRUSHES scissors, you win!")
+} 
+
+//If the human chooses paper (1):
+
+else if (humanChoice == "paper" && computerChoice == "rock") {
+    alert("Paper SMOTHERS rock, you win!")
+} 
+
+else if (humanChoice == "paper" && computerChoice == "scissors") {
+    alert("Scissors CUT paper, you lose!")
+} 
+
+//If the human chooses scissors(2):
+else if (humanChoice == "scissors" && computerChoice == "rock") {
+    alert("Rock CRUSHES scissors, you lose!")
+} 
+else if (humanChoice == "scissors" && computerChoice == "paper") {
+    alert("Scissors CUT paper, you win!")
+};
+
+}
+
+    </script>
+    
+  </body>
+</html>
